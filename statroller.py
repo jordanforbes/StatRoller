@@ -1,4 +1,6 @@
 import characterclass as ch 
 
-player1 = ch.CharacterClass("Jim","Orc")
+name = input("enter name:")
+race = input("enter race:")
+player1 = ch.CharacterClass(name,race)
 player1.showStats()

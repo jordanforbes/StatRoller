@@ -11,6 +11,8 @@ class CharacterClass:
         self.inte = dice.rollStat() 
         self.wisd = dice.rollStat()
         self.char = dice.rollStat() 
+        
+    
     
     def showStats(self):
         print(
@@ -31,3 +33,11 @@ class CharacterClass:
         print("attack")
         return atk
         
+    def reRoll(self):
+        self.stre = dice.rollStat()
+        self.dext = dice.rollStat()
+        self.cons = dice.rollStat()
+        self.inte = dice.rollStat() 
+        self.wisd = dice.rollStat()
+        self.char = dice.rollStat() 
+        self.showStats()
