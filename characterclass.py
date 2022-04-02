@@ -32,7 +32,7 @@ class CharacterClass:
         print("attack")
         return atk
         
-    def rerollStats(self):
+    def reRollStats(self):
         self.stre = dice.rollStat()
         self.dext = dice.rollStat()
         self.cons = dice.rollStat()
