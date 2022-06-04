@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
-import statroller as cc
+import characterclass as cc
 
-open = False
+
 sg.theme('DarkAmber')
 layout = [  
                 [sg.Text('Name: '+cc.player1.name)], 
@@ -21,7 +21,7 @@ window = sg.Window(
     layout=layout
     )
 
-while open == True:
+while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Close':
         break
